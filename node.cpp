@@ -2,9 +2,10 @@
 
 Node::Node(int data){
     this->data = data;
+    this->next = nullptr;
 }
 
-void Node::set_next(Node * node){
+void Node::set_next(Node *node){
     this->next = node;
 }
 

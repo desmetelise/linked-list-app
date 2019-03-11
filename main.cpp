@@ -4,8 +4,11 @@
 
 using namespace std;
 
-void print(Node * node){
-    while(node.get_next() != NULLPTR)
+void print(Node *node){
+    while(node != nullptr){
+        cout << node->get_data() << endl;
+        node = node->get_next();
+    }
 }
 
 int main() {
